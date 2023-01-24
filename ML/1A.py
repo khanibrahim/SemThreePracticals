@@ -1,4 +1,4 @@
-#1 A. Design a simple machine learning model to train the training instances and test the same using Python.
+#1A Design a simple machine learning model to train the training instances and test the same using Python.
 
 import random
 from sklearn.linear_model import LinearRegression
@@ -14,9 +14,9 @@ for i in range(0, no_of_rows):
   y = random.randint(0, limit)
   z = random.randint(0, limit)
   g = 10 * x + 2 * y + 3 * z
-print("x=", x, "\ty=", y, "\tz=", z, "\tg=", g)
-feature_set.append([x, y, z])
-target_set.append(g)
+  print("x=", x, "\ty=", y, "\tz=", z, "\tg=", g)
+  feature_set.append([x, y, z])
+  target_set.append(g)
 print("Here the training of model begins. ")
 model = LinearRegression()
 model.fit(feature_set, target_set)
